@@ -1,0 +1,184 @@
+/* Goofy ahh PowerPoint CSS */
+
+/* Algemene instellingen */
+body {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    /* Zotte kleurencombinatie */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    /* Altijd Comic Sans, natuurlijk */
+    color: #ff0077;
+    /* Felle, opvallende kleur voor tekst */
+    text-shadow: 2px 2px 8px #00ff00;
+    /* Fluoriserende tekst */
+}
+
+/* H1: Groot en opvallend */
+h1 {
+    font-size: 4em;
+    color: #ff0000;
+    text-align: center;
+    text-transform: uppercase;
+    animation: shake 1s infinite;
+}
+
+/* H2: Nog steeds opvallend */
+h2 {
+    font-size: 3em;
+    color: #ffff00;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+/* Paragrafen */
+p {
+    font-size: 1.5em;
+    color: #0000ff;
+    line-height: 1.6;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Button-stijl */
+button {
+    background-color: #00ffcc;
+    color: #ff0066;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 3px dashed #ff00ff;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.5s;
+}
+
+button:hover {
+    transform: scale(1.2) rotate(10deg);
+    background-color: #ff6699;
+}
+
+/* Animaties */
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Base styling */
+.explosive-button {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px 40px;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ff0066, #ffcc00);
+    border: 5px solid #ff0066;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(255, 0, 102, 0.6), 0px 0px 25px rgba(255, 204, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-shadow: 2px 2px 8px #000000;
+    animation: pulse 1.5s infinite ease-in-out, bounce 0.5s infinite ease-in-out;
+}
+
+/* Hover effect */
+.explosive-button:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0px 0px 25px rgba(255, 0, 102, 0.8), 0px 0px 35px rgba(255, 204, 0, 1);
+    background: linear-gradient(45deg, #ffcc00, #ff0066);
+}
+
+/* Active/click effect */
+.explosive-button:active {
+    transform: scale(1.15) rotate(2deg);
+    box-shadow: 0px 0px 40px rgba(255, 255, 0, 1), 0px 0px 60px rgba(255, 102, 178, 1);
+    background: linear-gradient(45deg, #ff6600, #ff33cc);
+}
+
+/* Keyframes for the animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
